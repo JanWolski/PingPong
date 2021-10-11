@@ -1,7 +1,7 @@
-package test.final;
+package test.finalTest;
 
 
-public class Main 
+public class Ping 
 {
 	
 	Paddle leftPaddle;
@@ -19,15 +19,28 @@ public class Main
 		ball.start();
 		loop();
     }
+	
+	class Drawer{
+	    public void draw() {
+	    	drawBorder();
+	    	
+	    	drawBorder();
+	    	
+	    	
+	    	
+	    }
+	    
+	    public void drawBorder() {
+	    	for(int i=0;i<width+1;i++) {
+	    		System.out.print("#");
+	    	}
+	    }
+		
+	}
     
-    public void draw() {
-    	for(int i=0;i<width+1;i++) {
-    		
-    	}
-    	System.out.print("#");
-    }
+
     
-    public void loop() {
+    public static void loop() {
     	while(1) {
     		ball.move();
     	}
