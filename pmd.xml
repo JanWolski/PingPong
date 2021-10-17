@@ -10,6 +10,8 @@
 	</description>
 	<rule ref="category/java/codestyle.xml">
 		<exclude name="LocalVariableCouldBeFinal" />
+		<exclude name="MethodArgumentCouldBeFinal" /><exclude
+			name="PackageCase" />
 	</rule>
 
 </ruleset>
